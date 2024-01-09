@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <title>The Car Stealing Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div class="wrapper">
+    <div class="banner-wrapper">
+        <img src="images/potatoqueen_banner.png" class="potatopic" alt="queen" srcset="" >
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home of Potato</a></li>
+            <li><a href="cartheft.html">Car Theft</a></li>
+            <li><a href="theft.html">Theft</a></li>
+            <li><a href="car-races.html">Car Races</a></li>
+            <li><a href="smuggling.html">Smuggling</a></li>
+            <li><a href="murdering.html">Assassination</a></li>
+            <li><a href="store.html">Weapon Store</a></li>
+            <li><a href="score.html">Score</a></li>
+        </ul>
+    </nav>
+</div>
+<body>
+    
+    <div class="wrapper">
+        <h1>Potato Weapon Store</h1>
+        <div id="weapon-store">
+            <div class="weapon-item">
+                <img src="images/spud-gun.png" class="potatopic" alt="" srcset="">
+                <h2>Spud Gun</h2>
+                <p>Price: $500</p>
+                <p>Accuracy: 0.5%</p>
+                <button class="buy-btn" data-weapon-name="Spud Gun" data-price="500" data-accuracy="0.5">Buy Spud Gun</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/potato-peeler-pistol.png" class="potatopic" alt="" srcset="">
+                <h2>Potato Peeler Pistol</h2>
+                <p>Price: $100</p>
+                <p>Accuracy: 1.0%</p>
+                <button class="buy-btn" data-weapon-name="Potato Peeler Pistol" data-price="100" data-accuracy="1.0">Buy Potato Peeler Pistol</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/fryer-firearm.png" class="potatopic" alt="" srcset="">
+                <h2>Fryer Firearm</h2>
+                <p>Price: $2000</p>
+                <p>Accuracy: 2.0%</p>
+                <button class="buy-btn" data-weapon-name="Fryer Firearm" data-price="2000" data-accuracy="2.0">Buy Fryer Firearm</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/masher-machinegun.png"  class="potatopic"  alt="" srcset="">
+                <h2>Masher Machine Gun</h2>
+                <p>Price: $5000</p>
+                <p>Accuracy: 3.0%</p>
+                <button class="buy-btn" data-weapon-name="Masher Machine Gun" data-price="5000" data-accuracy="3.0">Buy Masher Machine Gun</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/hashbrown-handgun.png" class="potatopic"  alt="" srcset="">
+                <h2>Hashbrown Handgun</h2>
+                <p>Price: $200</p>
+                <p>Accuracy: 0.1%</p>
+                <button class="buy-btn" data-weapon-name="Hashbrown Handgun" data-price="200" data-accuracy="0.1">Buy Hashbrown Handgun</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/latke-launcher.png" class="potatopic"  alt="" srcset="">
+                <h2>Latke Launcher</h2>
+                <p>Price: $10000</p>
+                <p>Accuracy: 3.5%</p>
+                <button class="buy-btn" data-weapon-name="Latke Launcher" data-price="10000" data-accuracy="3.5">Buy Latke Launcher</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/gnocchi-granade.png" class="potatopic"  alt="" srcset="">
+                <h2>Gnocchi Grenade</h2>
+                <p>Price: $15000</p>
+                <p>Accuracy: 4.0%</p>
+                <button class="buy-btn" data-weapon-name="Gnocchi Grenade" data-price="15000" data-accuracy="4.0">Buy Gnocchi Grenade</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/chips-cannon.png" class="potatopic"  alt="" srcset="">
+                <h2>Chips Cannon</h2>
+                <p>Price: $50000</p>
+                <p>Accuracy: 6.5%</p>
+                <button class="buy-btn" data-weapon-name="Chips Cannon" data-price="50000" data-accuracy="6.5">Buy Chips Cannon</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/potato-bazooka.png" class="potatopic" alt="" srcset="">
+                <h2>Potato Bazooka</h2>
+                <p>Price: $1000000</p>
+                <p>Accuracy: 8.0%</p>
+                <button class="buy-btn" data-weapon-name="Potato Bazooka" data-price="1000000" data-accuracy="8.0">Buy Potato Bazooka</button>
+            </div>
+            <div class="weapon-item">
+                <img src="images/tater-tornado.png" class="potatopic" alt="" srcset="">
+                <h2>Tater Tornado</h2>
+                <p>Price: $2000000</p>
+                <p>Accuracy: 9.5%</p>
+                <button class="buy-btn" data-weapon-name="Tater Tornado" data-price="2000000" data-accuracy="9.5">Buy Tater Tornado</button>
+            </div>
+        </div>
+        <p class="error-msg"></p>
+        <div id="inventory">
+            <h2>Your Inventory</h2>
+            <ul class="inventory-list">
+                <!-- Purchased weapons will be listed here -->
+            </ul>
+        </div>
+        <div class="money-display-bottom">
+            Money: $<span id="money-value-bottom">0</span>
+        </div>
+    </div>
+    <script src="inventory-manager.js"></script>
+    <script src="weapon-store.js"></script>
+</body>
+</html>

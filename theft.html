@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <title>The Theft Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner-wrapper">
+            <img src="images/potatoqueen_banner.png" class="potatopic" alt="queen" srcset="" >
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home of Potato</a></li>
+            <li><a href="cartheft.html">Car Theft</a></li>
+            <li><a href="theft.html">Theft</a></li>
+            <li><a href="car-races.html">Car Races</a></li>
+            <li><a href="smuggling.html">Smuggling</a></li>
+            <li><a href="murdering.html">Assassination</a></li>
+            <li><a href="store.html">Weapon Store</a></li>
+            <li><a href="score.html">Score</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="wrapper">
+    <div class="theft-menu">
+        <div class="theft-item">
+            <img src="images/purse.png" alt="Purse" class="item-img">
+            <h2>Steal Purses</h2>
+            <p>Price: 0-$200</p>
+            <p class="chance-of-theft">Chance of Theft: 40%</p>
+            <button class="steal-btn" data-item-type="Purse" data-chance="40">Steal Purse</button>
+        </div>
+        <div class="theft-item">
+            <img src="images/jewelry.png" alt="Jewelry Store" class="item-img">
+            <h2>Rob Jewelry Store</h2>
+            <p>Price: $100 - 5,000</p>
+            <p class="chance-of-theft">Chance of Theft: 25%</p>
+            <button class="steal-btn" data-item-type="Jewel" data-chance="25">Rob Store</button>
+        </div>
+        <div class="theft-item">
+            <img src="images/bank.png" alt="Bank" class="item-img">
+            <h2>Rob Bank</h2>
+            <p>Price: $50,000</p>
+            <p class="chance-of-theft">Chance of Theft: 10%</p>
+            <button class="steal-btn" data-item-type="Bank" data-price="50000" data-chance="10">Rob Bank</button>
+        </div>
+        <div class="theft-item">
+            <img src="images/atm.png" alt="ATM" class="item-img">
+            <h2>Rob ATM</h2>
+            <p>Price: $1,000</p>
+            <p class="chance-of-theft">Chance of Theft: 30%</p>
+            <button class="steal-btn" data-item-type="ATM" data-price="1000" data-chance="30">Rob ATM</button>
+        </div>
+    </div>
+
+    <div class="result">
+        <p class="success-message"></p>
+        <div class="success-image-container"></div>
+        <p class="failure-message"></p>
+        <div id="jail-container"></div>
+        <div id="jail-image-container"></div>
+        <p class="jail-timer"></p>
+        <button class="breakout-btn">Attempt Breakout</button>
+        <div class="stolen-items">
+            <button class="dropdown-btn">Loot Bag</button>
+            <ul class="loot-bag"></ul>
+        </div>
+        <p class="money-display"></p>
+        <button class="cheat-btn">Cheat</button>
+    </div>
+    <script src="inventory-manager.js"></script>
+<script src="theft.js"></script>
+</body>
+</html>

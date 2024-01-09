@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <title>The Car Stealing Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div class="wrapper">
+    <div class="banner-wrapper">
+        <img src="images/potatoqueen_banner.png" class="potatopic" alt="queen" srcset="" >
+</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home of Potato</a></li>
+            <li><a href="cartheft.html">Car Theft</a></li>
+            <li><a href="theft.html">Theft</a></li>
+            <li><a href="car-races.html">Car Races</a></li>
+            <li><a href="smuggling.html">Smuggling</a></li>
+            <li><a href="murdering.html">Assassination</a></li>
+            <li><a href="store.html">Weapon Store</a></li>
+            <li><a href="score.html">Score</a></li>
+        </ul>
+    </nav>
+</div>
+<body>
+    <div class="wrapper assassination">
+        <div class="assassination_wrapper">
+        <h1>Assassination Missions</h1>
+        <div class="money-display">Money Balance: <span id="money-amount"></span></div>
+        <div id="target-selection">
+            <label for="targets">Choose a Target:</label>
+            <select id="targets"></select> <!-- Populated by JS -->
+        </div>
+        <div id="weapon-selection">
+            <label for="weapon-dropdown">Select a Weapon:</label>
+            <select id="weapon-dropdown"></select> <!-- Populated by JS -->
+        </div>
+        <div id="attempt-assassination">
+            <h2>Attempt Assassination</h2>
+            <p><i>the cost of each bullet is 100$</i></p>
+            <label for="bullets">Bullets to use:</label>
+            <input type="number" id="bullets" name="bullets" min="1" max="10000" required>
+            <button id="execute-btn">Execute</button>
+        </div>
+    </div>
+    <img src="images/angry_potato.png" class="assassination-image" alt="" srcset="">
+
+        <div id="result"></div>
+    </div>
+    <button id="cheat-btn">Add $1,000,000</button>
+    <script src="inventory-manager.js"></script>
+    <script src="murder.js"></script>
+</body>
+</html>
